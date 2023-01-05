@@ -29,6 +29,7 @@ program
   .option("-r, --isUseRem", "是否开启px转rem")
   .option("-H, --HTTPS", "是否开启https")
   .option("-h, --HOST [HOST]", "指定项目运行的host")
+  .option("-p, --PORT [PORT]", "指定项目运行的端口号")
   .description("运行项目")
   .action((options) => {
     console.log(chalk.greenBright("设置的环境变量"), options);
@@ -38,6 +39,7 @@ program
     process.env.isUseRem = !!options.isUseRem;
     process.env.HTTPS = !!options.HTTPS;
     process.env.HOST = options.HOST;
+    process.env.PORT = options.PORT;
 
     const isDev = process.env.mode === "Dev" ? true : false;
     if (isDev) {

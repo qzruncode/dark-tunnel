@@ -41,7 +41,9 @@ exports.plugins = [
   new InterpolateHtmlPlugin({
     PUBLIC_URL: publicUrl.slice(0, -1),
   }),
-  new Dotenv(),
+  new Dotenv({
+    path: path.join(process.cwd(), '.env')
+  }),
   new MiniCssExtractPlugin({
     filename: 'css/[name].[contenthash].css',
     chunkFilename: 'css/[id].[contenthash].css',

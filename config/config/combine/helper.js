@@ -7,7 +7,7 @@ const path = require('path');
  * @param  {} cb
  * @param  {} PORT=3000
  */
-const checkPortIsValid = (cb, PORT = 3002) => {
+const checkPortIsValid = (cb, PORT = process.env.PORT) => {
   const testServer = net.createServer()
   testServer.unref();
   testServer.listen(PORT); // 检测端口有无重复

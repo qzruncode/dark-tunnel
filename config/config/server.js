@@ -50,7 +50,6 @@ try {
       ],
       proxy,
     };
-    console.log('options', options);
     const server = new webpackDevServer(options, compiler);
     server.start();
     console.log(`project listening on port ${PORT}!\n`);
