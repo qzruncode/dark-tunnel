@@ -1,4 +1,15 @@
+[![NPM version](https://img.shields.io/npm/v/dark-tunnel.svg)](https://www.npmjs.com/package/dark-tunnel)
+[![NPM package](https://img.shields.io/npm/dy/dark-tunnel.svg)](https://www.npmjs.com/package/dark-tunnel)
+
 ## dark-tunnel前端构建工具
+
+> 此工具用来快速初始化前端项目模板，避免繁琐的重复配置
+
+### 支持的项目模板
+
+1. [sophic-template](https://www.npmjs.com/package/sophic-template) 此为[sophic](https://www.npmjs.com/package/sophic)微前端框架的子应用模板
+2. [sophic-master-template](https://www.npmjs.com/package/sophic-master-template) 此为sophic微前端框架的主应用模板
+3. 更多模板待开发...
 
 ### 支持的命令
 
@@ -58,9 +69,4 @@ module.exports = {
 ```
 使用了InterpolateHtmlPlugin对 %PUBLIC_URL% 变量进行替换
 ```
-
-### 模板项目
-
-1. sophic-template 此为sophic微前端框架的子应用模板
-2. sophic-master-template 此为sophic微前端框架的主应用模板
    
