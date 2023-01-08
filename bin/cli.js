@@ -42,24 +42,21 @@ program
     process.env.PORT = options.PORT;
 
     const isDev = process.env.mode === "Dev" ? true : false;
-    if (isDev) {
-      require("../config/config/server");
-    } else {
-      // 检查webpack.plugins.js是否存在
-      fs.stat(resolveApp("darkTunnel.config.js"), (err, stats) => {
-        const config = require("../config/index");
-        if (stats) {
-          if (stats.isFile()) {
-            const plugin = require(resolveApp("darkTunnel.config.js"));
-            config(plugin);
-          } else {
-            config();
-          }
-        } else {
-          config();
+    // 检查webpack.plugins.js是否存在
+    fs.stat(resolveApp("darkTunnel.config.js"), (err, stats) => {
+      let plugin;
+      if (stats) {
+        if (stats.isFile()) {
+          plugin = require(resolveApp("darkTunnel.config.js"));
         }
-      });
-    }
+      }
+      if (isDev) {
+        const runServer = require("../config/config/server");
+        runServer(plugin ? plugin : []);
+      } else {
+        config(plugin ? plugin : []);
+      }
+    });
   });
 
 program.command("init")

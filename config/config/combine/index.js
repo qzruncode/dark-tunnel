@@ -16,7 +16,7 @@ exports.output = {
 };
 
 exports.resolve = {
-  // symlinks: false,
+  symlinks: false,
   extensions: ['.ts', '.tsx', '.js'],
   modules: [
     // 设置解析模块时要查找的路径

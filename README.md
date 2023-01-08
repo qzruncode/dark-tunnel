@@ -1,4 +1,6 @@
-1. 命令
+## dark-tunnel前端构建工具
+
+### 支持的命令
 
 ```
 dark --help
@@ -19,7 +21,7 @@ dark init 下载项目模板
   dark init sophic-template
 ```
 
-2. 代理
+### 代理配置
 
 ```
 项目根目录新建proxy.js文件
@@ -33,7 +35,7 @@ module.exports = {
 }
 ```
 
-3. 别名
+### 别名配置
 
 ```
 项目根目录新建alias.config.js文件
@@ -45,14 +47,20 @@ module.exports = {
 };
 ```
 
-4. static文件夹
+### 静态文件
 
 ```
-此文件中的文件最终会被复制到build文件夹中
+项目根目录的static文件夹中的文件最终会被复制到build文件夹中
 ```
 
-5. html模板
+### html模板变量
 
 ```
 使用了InterpolateHtmlPlugin对 %PUBLIC_URL% 变量进行替换
 ```
+
+### 模板项目
+
+1. sophic-template 此为sophic微前端框架的子应用模板
+2. sophic-master-template 此为sophic微前端框架的主应用模板
+   
