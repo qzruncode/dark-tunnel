@@ -54,6 +54,7 @@ program
         const runServer = require("../config/config/server");
         runServer(plugin ? plugin : []);
       } else {
+        const config = require("../config/index");
         config(plugin ? plugin : []);
       }
     });
