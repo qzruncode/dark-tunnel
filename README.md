@@ -14,7 +14,7 @@ dark run --help 查看此命令参数
   -h 设置开发环境的HOST
 示例：
   开发：dark run -m Dev -h emonitor.local.elenet.me -H -url /
-  dark run -m Pro -url /
+  生产：dark run -m Pro -url /
 
 dark init 下载项目模板
 示例：
