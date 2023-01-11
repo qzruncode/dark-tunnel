@@ -9,7 +9,19 @@
 
 1. [sophic-template](https://www.npmjs.com/package/sophic-template) 此为[sophic](https://www.npmjs.com/package/sophic)微前端框架的子应用模板
 2. [sophic-master-template](https://www.npmjs.com/package/sophic-master-template) 此为sophic微前端框架的主应用模板
-3. 更多模板待开发...
+3. [dark-tunnel-base-template](https://www.npmjs.com/package/dark-tunnel-base-template) 此为dark-tunnel的react应用模板
+4. 更多模板待开发...
+
+
+### 模板下载示例
+
+```
+mkdir reactDemo
+cd reactDemo
+dark init dark-tunnel-base-template
+npm install
+npm start
+```
 
 ### 支持的命令
 
