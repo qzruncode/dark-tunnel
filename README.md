@@ -10,7 +10,8 @@
 1. [sophic-template](https://www.npmjs.com/package/sophic-template) 此为[sophic](https://www.npmjs.com/package/sophic)微前端框架的子应用模板
 2. [sophic-master-template](https://www.npmjs.com/package/sophic-master-template) 此为sophic微前端框架的主应用模板
 3. [dark-tunnel-base-template](https://www.npmjs.com/package/dark-tunnel-base-template) 此为dark-tunnel的react应用模板
-4. 更多模板待开发...
+4. [ewchart-base-template](https://www.npmjs.com/package/ewchart-base-template) 此为[ewchart](https://www.npmjs.com/package/ewchart)的示例模板
+5. 更多模板待开发...
 
 
 ### 模板下载示例
